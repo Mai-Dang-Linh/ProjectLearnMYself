@@ -11,6 +11,7 @@ public:
     void SetMapMember(map<string,string> member);
     map<string,string> GetMapMemner();
     string ToString();
+    string GetValue(string key);
     // string GetInfor();
 
     // json ToJson();

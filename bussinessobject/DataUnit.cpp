@@ -27,6 +27,17 @@ string DataUnit::ToString()
     return s;
 
 }
+string DataUnit::GetValue(string key){
+    string s("");
+    map<string,string>::iterrator it;
+    for(it = Member.begin();it != Member.end(); it++)
+    {
+        if(key == Member.find(key))
+            s = it->second;
+    }
+
+    return s;
+}
 // string DataUnit:: GetInfor()
 // {
 
